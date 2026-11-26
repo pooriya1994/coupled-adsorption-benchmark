@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "coupled-adsorption-benchmark"
+version = "1.0.0"
+description = "Exact coupled benchmark for lattice Boltzmann simulation of adsorption: transient fluid-solid diffusion with interfacial adsorption-desorption kinetics"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+  {name = "Pooriya Ghorbani", email = "p_ghorbani@mecheng.iust.ac.ir"},
+]
+keywords = ["adsorption", "lattice Boltzmann", "analytical solution", "benchmark",
+            "code verification", "conjugate mass transfer", "composite media"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = ["numpy>=1.22", "scipy>=1.8", "mpmath>=1.2"]
+
+[project.optional-dependencies]
+plot = ["matplotlib>=3.5"]
+test = ["pytest>=7"]
+
+[project.scripts]
+adsorption-benchmark = "adsorption_benchmark.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/pooriya1994/coupled-adsorption-benchmark"
+Changelog = "https://github.com/pooriya1994/coupled-adsorption-benchmark/blob/main/CHANGELOG.md"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+include = ["adsorption_benchmark*"]

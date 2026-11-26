@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+title: "Coupled adsorption benchmark: exact solution for verifying lattice Boltzmann adsorption codes"
+message: "If you use this software, please cite the paper below and the version of the software you used."
+type: software
+version: 1.0.0
+date-released: 2026-10-25   # update to the actual release date when tagging
+license: MIT
+repository-code: "https://github.com/pooriya1994/coupled-adsorption-benchmark"
+# doi: 10.5281/zenodo.XXXXXXX   # concept DOI - add after the first Zenodo archive
+keywords:
+  - adsorption
+  - lattice Boltzmann
+  - analytical solution
+  - benchmark
+  - code verification
+  - conjugate mass transfer
+authors:
+  - family-names: Ghorbani
+    given-names: Pooriya
+    email: p_ghorbani@mecheng.iust.ac.ir
+    affiliation: >-
+      Applied Multi-phase Fluid Dynamics Laboratory, Iran University of
+      Science and Technology, Tehran, Iran
+preferred-citation:
+  type: article
+  title: "An exact coupled benchmark for lattice Boltzmann simulation of adsorption: transient fluid-solid diffusion with interfacial adsorption-desorption kinetics"
+  authors:
+    - family-names: Ghorbani
+      given-names: Pooriya
+  year: 2026
+  status: in-preparation
